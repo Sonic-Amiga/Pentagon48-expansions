@@ -16,4 +16,4 @@
 отдельный 2-контактный разъём для подачи питания 12В. В качестве последнего хорошо
 подходит разъём JST EHR-2
 
-![Adapter picture](images/Adapter_assembled.jpg)
+![Adapter picture](images/Adapter-assembled.jpg)

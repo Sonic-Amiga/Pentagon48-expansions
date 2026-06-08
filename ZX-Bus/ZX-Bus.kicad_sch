@@ -6030,28 +6030,30 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JP"
-				(at -2.54 -2.54 0)
+			(property "Reference" "JP2"
+				(at 1.27 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Value" "Jumper_3_Bridged12"
-				(at 0 2.794 0)
+			(property "Value" "ROM type"
+				(at 3.81 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_3x02_P2.54mm_Vertical"
+				(at -1.27 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6073,7 +6075,7 @@
 				)
 			)
 			(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-				(at 0 -11.43 0)
+				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6107,6 +6109,17 @@
 			)
 			(symbol "Jumper_3_Bridged12_0_0"
 				(circle
+					(center -2.032 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
 					(center -2.032 0)
 					(radius 0.508)
 					(stroke
@@ -6118,7 +6131,29 @@
 					)
 				)
 				(circle
+					(center 0 5.08)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
 					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 5.08)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -6153,9 +6188,69 @@
 						(type none)
 					)
 				)
+				(arc
+					(start -1.9707 5.6133)
+					(mid -1.0817 5.9208)
+					(end -0.1927 5.6133)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -0.508)
+						(xy 0 2.54) (xy 0 4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -6186,7 +6281,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
+					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "C"
 						(effects
@@ -6214,6 +6309,60 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8780,6 +8929,12 @@
 		(uuid "8b980b68-6a41-48ec-925b-1ec052a6199e")
 	)
 	(junction
+		(at 31.75 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c189980-5a7b-4aa7-9c02-a706bad2b3d5")
+	)
+	(junction
 		(at 330.2 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8802,12 +8957,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93398003-c6ce-4384-a1a1-1a3ad62653ac")
-	)
-	(junction
-		(at 30.48 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a7b79035-ecca-416d-a2bb-572248fa5afd")
 	)
 	(junction
 		(at 330.2 129.54)
@@ -12804,13 +12953,13 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 167.64) (xy 25.4 167.64)
+			(xy 31.75 157.48) (xy 31.75 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "014c50dd-9efd-4aae-9fdd-515f66009715")
+		(uuid "0181c810-ceeb-49a2-98e8-e95c97688276")
 	)
 	(wire
 		(pts
@@ -14474,7 +14623,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 167.64) (xy 30.48 167.64)
+			(xy 38.1 167.64) (xy 31.75 167.64)
 		)
 		(stroke
 			(width 0)
@@ -16302,16 +16451,6 @@
 		)
 		(uuid "711b8220-8600-4cc8-810f-3a42b0b9c0ac")
 	)
-	(wire
-		(pts
-			(xy 30.48 162.56) (xy 30.48 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71c39ced-1c2a-47d5-94cf-0b384009fe65")
-	)
 	(bus
 		(pts
 			(xy 285.75 97.79) (xy 285.75 95.25)
@@ -16391,6 +16530,16 @@
 			(type default)
 		)
 		(uuid "73cec161-c376-4593-9cca-48a5d6776676")
+	)
+	(wire
+		(pts
+			(xy 29.21 165.1) (xy 54.61 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e843b9-fb4c-4a2c-a2b2-14ab73efd40d")
 	)
 	(bus
 		(pts
@@ -17094,6 +17243,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 157.48) (xy 29.21 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876ad102-434a-4320-97f0-b7fc6e81b7e8")
+	)
+	(wire
+		(pts
 			(xy 44.45 99.06) (xy 57.15 99.06)
 		)
 		(stroke
@@ -17224,6 +17383,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 167.64) (xy 31.75 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b5ded0f-91d4-4e7a-89dd-0db4c0aea49e")
+	)
+	(wire
+		(pts
 			(xy 182.88 259.08) (xy 191.77 259.08)
 		)
 		(stroke
@@ -17351,6 +17520,16 @@
 			(type default)
 		)
 		(uuid "9095ae9d-7652-40f0-92f0-61c3c6be6918")
+	)
+	(wire
+		(pts
+			(xy 22.86 147.32) (xy 26.67 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9095ffac-e782-4581-9cba-a59345e716fc")
 	)
 	(wire
 		(pts
@@ -17531,6 +17710,16 @@
 			(type default)
 		)
 		(uuid "950e7705-19ca-474f-b25f-0becfa1fbd20")
+	)
+	(wire
+		(pts
+			(xy 22.86 172.72) (xy 22.86 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95169c9b-da17-4892-925b-2decc95fbcad")
 	)
 	(wire
 		(pts
@@ -19274,16 +19463,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 165.1) (xy 54.61 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c976296f-1308-4b34-bed9-081159b7fd83")
-	)
-	(wire
-		(pts
 			(xy 283.21 102.87) (xy 274.32 102.87)
 		)
 		(stroke
@@ -20904,6 +21083,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 172.72) (xy 25.4 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa69f829-10fd-490f-8b18-f6bb35bbdf85")
+	)
+	(wire
+		(pts
 			(xy 119.38 90.17) (xy 124.46 90.17)
 		)
 		(stroke
@@ -21151,6 +21340,16 @@
 			(justify right bottom)
 		)
 		(uuid "04d8e661-1e0d-4939-9e67-c14870cd198a")
+	)
+	(label "~{DOS}"
+		(at 25.4 172.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "050927a0-7370-49d8-acf4-3c374b19c108")
 	)
 	(label "*A3"
 		(at 44.45 194.31 0)
@@ -22842,6 +23041,16 @@
 		)
 		(uuid "6d13f66a-09a9-4d96-aae2-b863d7807adb")
 	)
+	(label "DOS"
+		(at 22.86 172.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6db40b65-2c28-425e-9497-6a5eb164a218")
+	)
 	(label "~{BUSAK}"
 		(at 73.66 101.6 0)
 		(effects
@@ -23021,16 +23230,6 @@
 			(justify right bottom)
 		)
 		(uuid "7a56b4dd-8811-41da-9624-b300f2f347d8")
-	)
-	(label "~{DOS}"
-		(at 25.4 167.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7b44a559-705b-4357-ab76-642aa50fa52e")
 	)
 	(label "A20"
 		(at 182.88 261.62 0)
@@ -25021,16 +25220,6 @@
 			(justify right bottom)
 		)
 		(uuid "f5906340-b1f1-4ba3-abeb-ec8fe1382198")
-	)
-	(label "DOS"
-		(at 25.4 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f5976f4a-b517-4757-ad6a-8d60fa542dda")
 	)
 	(label "*~{RD}"
 		(at 85.09 234.95 0)
@@ -27455,91 +27644,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_3_Bridged12")
-		(at 30.48 157.48 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1ac15079-c8de-452a-acdd-e630d6bc0c79")
-		(property "Reference" "JP2"
-			(at 27.94 158.7501 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ROM type"
-			(at 28.448 155.956 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 30.48 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
-			(at 41.91 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6a23d869-32f0-43a5-98cc-1216b36cc2a3")
-		)
-		(pin "3"
-			(uuid "ec773307-bb2f-4456-8a5e-27dc7d7a1bf8")
-		)
-		(pin "2"
-			(uuid "6a88ba6a-0e3b-448e-98b4-cbb761f4c5db")
-		)
-		(instances
-			(project "ZX-Bus"
-				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 200.66 166.37 270)
 		(unit 1)
@@ -28267,7 +28371,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 30.48 152.4 0)
+		(at 31.75 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28275,10 +28379,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "26eddc13-94a9-450a-8d6c-9043c7dbfa20")
 		(property "Reference" "#PWR086"
-			(at 30.48 156.21 0)
+			(at 31.75 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28289,7 +28392,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 30.48 147.32 0)
+			(at 31.75 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28299,7 +28402,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 152.4 0)
+			(at 31.75 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28310,7 +28413,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 152.4 0)
+			(at 31.75 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28321,7 +28424,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 30.48 152.4 0)
+			(at 31.75 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29049,6 +29152,100 @@
 			(project "ZX-Bus"
 				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
 					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_3_Bridged12")
+		(at 31.75 152.4 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39d2ce12-59b6-4bca-a672-942f7ba952f9")
+		(property "Reference" "JP2"
+			(at 16.002 150.368 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ROM type"
+			(at 13.716 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_3x02_P2.54mm_Vertical"
+			(at 35.56 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
+			(at 38.1 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b016ba6-4152-4409-82ad-7737477b0a74")
+		)
+		(pin "3"
+			(uuid "ee5628a0-533d-4e5b-9704-07ab8985926a")
+		)
+		(pin "2"
+			(uuid "ac16fd71-da43-474a-860e-b0bdb15c5793")
+		)
+		(pin "5"
+			(uuid "54409b7d-9ac1-4d57-8312-1081bcfcaaf8")
+		)
+		(pin "4"
+			(uuid "03e8a4f3-0c2f-4a3c-a4f6-2c5e8e06f119")
+		)
+		(pin "6"
+			(uuid "56790ea9-6e9f-43b7-8842-c90144fdf9db")
+		)
+		(instances
+			(project "ZX-Bus"
+				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -31952,7 +32149,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 191.008 248.92 90)
 			(hide yes)
 			(show_name no)
@@ -32311,6 +32508,85 @@
 			(project "ZX-Bus"
 				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 22.86 177.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8dcc88a8-b9a0-44f3-b8cd-8e268d92fdc7")
+		(property "Reference" "J9"
+			(at 24.384 179.578 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PLS-2R"
+			(at 24.13 181.864 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 22.86 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 22.86 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b555868b-d94d-40f1-9e84-33df0e6d154a")
+		)
+		(pin "2"
+			(uuid "4c88b257-4ba4-4d09-bccd-760523e5c6a6")
+		)
+		(instances
+			(project "ZX-Bus"
+				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -35933,6 +36209,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 26.67 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca7add3c-2902-4203-9671-e8aa57e53dc3")
+		(property "Reference" "#PWR088"
+			(at 26.67 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.67 161.544 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 26.67 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f0f199e-2948-4ce4-bff4-610e61f88e45")
+		)
+		(instances
+			(project "ZX-Bus"
+				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
+					(reference "#PWR088")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 349.25 219.71 0)
 		(unit 1)
@@ -37300,86 +37653,6 @@
 			(project "ZX-Bus"
 				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 20.32 167.64 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e4ecaf29-1192-43e0-a881-e7714da8ab8a")
-		(property "Reference" "J9"
-			(at 21.082 173.228 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PLS-2R"
-			(at 21.082 170.688 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
-			(at 20.32 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 20.32 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 20.32 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bfbdd818-d6d8-481e-9701-82f149f3562a")
-		)
-		(pin "2"
-			(uuid "12eb023d-4063-4417-9b32-2ca2490cf441")
-		)
-		(instances
-			(project "ZX-Bus"
-				(path "/e919f151-b328-4d2c-bb3c-73ab87d30906"
-					(reference "J9")
 					(unit 1)
 				)
 			)

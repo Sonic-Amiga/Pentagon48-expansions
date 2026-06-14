@@ -13424,15 +13424,6 @@
 		(path "/0385617d-0dfa-4432-a03c-109681349e46")
 		(sheetname "/")
 		(sheetfile "ZX-Bus.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
-					"16" "17" "18" "19" "20" "40" "39" "38" "37" "36" "35" "34" "33" "32"
-					"31" "30" "29" "28" "27" "26" "25" "24" "23" "22" "21"
-				)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14029,6 +14020,28 @@
 			(uuid "b17aab71-61bf-418f-9238-16f5d097a7d4")
 		)
 		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x20_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 -1.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x20_P2.54mm_Vertical.step"
+			(offset
+				(xyz 15.5 0 -1.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
 	)
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
@@ -19732,37 +19745,11 @@
 		(path "/74eca7f2-51e7-441e-b11f-b1de410cc14a")
 		(sheetname "/")
 		(sheetfile "ZX-Bus.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6" "7" "14" "13" "12" "11" "10" "9" "8")
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 8.636 16.5608)
-			(end 6.46 16.5608)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "84aa89e3-1e9a-4e89-bc63-c90371e4e58c")
-		)
-		(fp_line
-			(start 8.636 -1.3208)
-			(end 8.636 16.5608)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "25b28699-816a-4b6c-a372-f319d55d14cd")
-		)
-		(fp_line
-			(start 8.636 -1.33)
-			(end 6.46 -1.33)
+			(start 6.46 16.5952)
+			(end 6.46 -1.3048)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -19771,18 +19758,18 @@
 			(uuid "d43aeb05-a3ca-45cb-a1b7-7f2bc196ffd5")
 		)
 		(fp_line
-			(start 6.46 16.5608)
-			(end 6.46 -1.33)
+			(start 6.46 -1.3048)
+			(end 4.81 -1.3048)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "4318b0d6-875f-4ef2-a4b2-d2b678770193")
+			(uuid "84aa89e3-1e9a-4e89-bc63-c90371e4e58c")
 		)
 		(fp_line
-			(start 1.1684 -1.33)
-			(end 1.1684 16.57)
+			(start 2.81 -1.3048)
+			(end 1.16 -1.3048)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -19791,34 +19778,35 @@
 			(uuid "0f5ec615-c9df-40e3-a16c-95c2b921de55")
 		)
 		(fp_line
-			(start 1.1684 -1.33)
-			(end -1.0668 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "d6749778-1dfc-4c43-a411-eeba3db8f783")
-		)
-		(fp_line
-			(start -1.0668 16.57)
-			(end 1.1684 16.57)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "B.SilkS")
-			(uuid "e62489d5-21ce-4041-9fa2-c5fcdd3c8181")
-		)
-		(fp_line
-			(start -1.0668 -1.3208)
-			(end -1.0668 16.5608)
+			(start 1.16 16.5952)
+			(end 6.46 16.5952)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "B.SilkS")
 			(uuid "5d7c4fb8-2c5e-4dd3-8948-d8db9786e0cd")
+		)
+		(fp_line
+			(start 1.16 -1.3048)
+			(end 1.16 16.5952)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "25b28699-816a-4b6c-a372-f319d55d14cd")
+		)
+		(fp_arc
+			(start 4.81 -1.3048)
+			(mid 3.81 -0.3048)
+			(end 2.81 -1.3048)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "4d8db97e-e2e2-4b0e-aa2b-fabd9a73ec93")
 		)
 		(fp_rect
 			(start 6.4076 -1.53)
@@ -20015,6 +20003,28 @@
 			(uuid "80001589-2e43-47a8-974c-ffda48e687d6")
 		)
 		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step"
+			(offset
+				(xyz 7.5 0 -1.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x07_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 -1.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -180 -0)
+			)
+		)
 	)
 	(footprint "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MC_1,5_2-G-5.08_1x02_P5.08mm_Horizontal"
 		(layer "F.Cu")

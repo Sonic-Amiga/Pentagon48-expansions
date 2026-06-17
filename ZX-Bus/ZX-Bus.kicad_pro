@@ -543,7 +543,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "ZX-Bus.net",
-      "plot": "",
+      "plot": "gerber/",
       "specctra_dsn": "",
       "vrml": ""
     },

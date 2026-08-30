@@ -545,6 +545,7 @@
       "netlist": "ZX-Bus.net",
       "plot": "gerber/",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -667,7 +668,7 @@
         "uuid": "e919f151-b328-4d2c-bb3c-73ab87d30906"
       }
     ],
-    "used_designators": "JP3,J11-12,#PWR91-92",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
